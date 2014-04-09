@@ -1,0 +1,290 @@
+@font-face { 
+	font-family: walk;
+	src: url(../fonts/Walkway_Black.ttf);
+}
+
+@font-face { 
+	font-family: comfort;
+	src: url(../fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face { 
+	font-family: comfort_bold;
+	src: url(../fonts/Comfortaa-Bold.ttf);
+}
+
+html, body {
+	height: 100%;
+}
+
+.chromeframe {
+	text-align: center;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+
+/* Head
+-----------------------------------------------*/
+
+.name {
+	text-align: center;
+	font-family: walk;
+	height: 100px;
+	line-height: 1em;
+	color: white;
+	font-weight:bold;
+	font-size: 5em;
+	text-shadow:0px 0px 0 rgb(91,13,13),0px -1px 0 rgb(76,-2,-2),0px -2px 0 rgb(62,-16,-16),0px -3px 0 rgb(47,-31,-31),0px -4px 0 rgb(33,-45,-45),0px -5px 0 rgb(18,-60,-60), 0px -6px 0 rgb(4,-74,-74),0px -7px 6px rgba(0,0,0,0.6),0px -7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+}
+
+
+
+
+
+
+/* Website Filter 
+-----------------------------------------------*/
+
+.filter {
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	font-family: comfort_bold;
+	font-size: 1.3em;
+	color: black;
+}
+
+.filter .col-sm-4 {
+	text-align: left;
+	height: 40px;
+
+}
+
+.filter .col-sm-4:hover {
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
+
+.active {
+	color: white;
+	background-color: rgba(0,0,0, 0.4);
+}
+
+
+
+
+/* Footer
+-----------------------------------------------*/
+
+
+.container-fluid {
+	min-height: 100%;
+  	margin-bottom: -160px;
+  	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid:after {
+	content: "";
+	display: block;
+	height: 220px;
+}
+
+
+.social {
+	text-align: center;
+	font-size: 1.8em;
+	font-family: walk;
+}
+
+
+.footer {
+  	padding-right: 15px;
+  	padding-left: 15px;
+	margin-left: -15px;
+	/* background-color: rgba(0, 0, 0, 0.2); */
+	margin-top:  20px;
+	height: 0px;
+}
+
+
+.footer .col-xs-6 a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+.footer .col-sm-6 a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/* Background Image and Overlay
+-----------------------------------------------*/
+
+
+.image {
+	background: url('../images/backdrop2.jpg') no-repeat fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	width: 100%;
+  	height: 100%;
+  	position: fixed;
+  	top: 0;
+  	right: 0;
+  	z-index: -1;
+}
+
+
+/* Content 
+-----------------------------------------------*/
+
+
+
+.top_content {
+	height: 100%;
+	min-height: 400px;
+}
+
+
+#content {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+
+.title {
+	line-height: 75px;
+	height: 20%;
+	font-size: 1.8em;
+	font-family: comfort_bold;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	text-align: center;
+}
+
+.sm_img {
+	width: 100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.item.square_md {
+	height: auto;
+	width: 100%;
+	margin: 5px auto;
+	/*border: 1px solid black;*/
+	box-shadow: 5px 5px 8px #888888;;
+	border-top: 1px solid rgba(0, 0, 0, 0.90);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.90);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item.square_lg {
+	
+}
+
+.item.square_xl {
+	min-height: 300px;
+	width: 100%;
+	text-align: center;
+	margin: 5px auto;
+
+}
+
+.sub_content {
+	width: 60%;
+	margin: 0px auto;
+}
+
+.backdrop {
+	width: 100%;
+	height: 100%;
+}
+
+.white {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+
+
+/* Blog Style Controls
+-----------------------------------------------*/
+
+.entry {
+	font-size: 1.5em;
+	text-align: left;
+	font-family: comfort;
+	padding: 20px;
+}
+
+.topic {
+	line-height: 75px;
+	height: 20%;
+	font-size: 1.8em;
+	font-family: comfort_bold;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	text-align: center;
+}
+
+.date {
+	font-family: comfort_bold;
+	font-size: 1.3em;
+}
+
+/* About Me Style Controls
+-----------------------------------------------*/
+
+.button {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0px auto;
+	margin-bottom: 5px;
+
+}
+
+.contact:hover, .quote:hover  {
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+/* Contact Me Controls
+-----------------------------------------------*/
+
+.contact_me {
+	font-size: 1.4em;
+	font-family: comfort;
+}
+
+.contact_head {
+	line-height: 75px;
+	height: 20%;
+	font-size: 1.4em;
+	font-family: comfort_bold;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	text-align: center;
+}

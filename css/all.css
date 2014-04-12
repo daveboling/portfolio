@@ -1,0 +1,349 @@
+@font-face { 
+	font-family: walk;
+	src: url(../fonts/Walkway_Black.ttf);
+}
+
+@font-face { 
+	font-family: comfort;
+	src: url(../fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face { 
+	font-family: comfort_bold;
+	src: url(../fonts/Comfortaa-Bold.ttf);
+}
+
+html, body {
+	height: 100%;
+}
+
+.chromeframe {
+	text-align: center;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+
+/* Head
+-----------------------------------------------*/
+
+.name {
+	text-align: center;
+
+}
+
+.text {
+	font-family: walk;
+	color: black;
+	font-weight: bold;
+	font-size: 4em;
+}
+
+.subtext {
+	font-size: 2em;
+}
+
+
+
+
+
+
+/* Website Filter 
+-----------------------------------------------*/
+
+.filter {
+	font-family: comfort_bold;
+	font-size: 1.3em;
+	color: white;
+	background-color: black;
+}
+
+.filter .col-sm-4 {
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	overflow: hidden;
+
+}
+
+.filter .col-sm-4:hover {
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
+
+.active {
+	color: black;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.fixed {
+	position: fixed;
+	z-index:999;
+	width: 100%;
+
+}
+
+
+
+
+/* Footer
+-----------------------------------------------*/
+
+
+.container-fluid {
+	min-height: 100%;
+  	margin-bottom: -160px;
+  	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid:after {
+	content: "";
+	display: block;
+	height: 220px;
+}
+
+
+.social {
+	text-align: center;
+	font-size: 1.8em;
+	font-family: walk;
+}
+
+
+.footer {
+  	padding-right: 15px;
+  	padding-left: 15px;
+	margin-left: -15px;
+	/* background-color: rgba(0, 0, 0, 0.2); */
+	margin-top:  20px;
+	height: 0px;
+}
+
+
+.footer .col-xs-6 a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+.footer .col-sm-6 a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/* Background Image and Overlay
+-----------------------------------------------*/
+
+
+.image {
+	background: url('../images/backdrop2.jpg') no-repeat fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	width: 100%;
+  	height: 100%;
+  	position: fixed;
+  	top: 0;
+  	right: 0;
+  	z-index: -1;
+}
+
+
+/* Content 
+-----------------------------------------------*/
+
+
+
+.top_content {
+	height: 100%;
+	min-height: 400px;
+}
+
+
+#content {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+
+.title {
+	line-height: 75px;
+	height: 20%;
+	font-size: 1.8em;
+	font-family: comfort_bold;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	text-align: center;
+}
+
+.sm_img {
+	width: 100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.item.square_md {
+	height: auto;
+	width: 100%;
+	margin: 5px auto;
+	/*border: 1px solid black;*/
+	box-shadow: 5px 5px 8px #888888;
+	border-top: 1px solid rgba(0, 0, 0, 0.90);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.90);
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item.square_lg {
+	
+}
+
+.item.square_xl {
+	min-height: 300px;
+	width: 100%;
+	text-align: center;
+	margin: 5px auto;
+
+}
+
+/* Default Size */
+.sub_content {
+	width: 60%;
+	margin: 0px auto;
+}
+
+
+
+.backdrop {
+	width: 100%;
+	height: 100%;
+}
+
+.white {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+
+
+/* Blog Style Controls
+-----------------------------------------------*/
+
+.entry {
+	font-size: 1.5em;
+	text-align: left;
+	font-family: comfort;
+	padding: 20px;
+}
+
+.topic {
+	line-height: 75px;
+	height: 20%;
+	font-size: 1.8em;
+	font-family: comfort_bold;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	text-align: center;
+}
+
+.date {
+	font-family: comfort_bold;
+	font-size: 1.3em;
+}
+
+/* About Me Style Controls
+-----------------------------------------------*/
+
+.button {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0px auto;
+	margin-bottom: 5px;
+
+}
+
+.contact:hover, .quote:hover  {
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+/* Contact Me Controls
+-----------------------------------------------*/
+
+.contact_me {
+	font-size: 1.4em;
+	font-family: comfort;
+	overflow: hidden;
+}
+
+.contact_head {
+	line-height: 75px;
+	height: 20%;
+	font-size: 1.4em;
+	font-family: comfort_bold;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	text-align: center;
+}
+
+
+/* Request a quote */
+
+input {
+	width: 80%;
+	display: block;
+	height: 40px;
+	font-size: 30px;
+	font-family: Tahoma;
+}
+
+form {
+	text-align: left;
+}
+
+
+
+/* Fine-tune For Tablets and Lower */
+@media (max-width: 40rem) { 
+
+.sub_content {
+	width: 100%;
+}
+
+.name {
+	font-size: .8em;
+}
+
+.contact_me {
+	font-size: 1em;
+}
+
+
+}

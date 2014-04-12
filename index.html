@@ -3,22 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/desktop.css">
+	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/handle.js"></script>
-	<!-- <script src="js/modernizer.js"></script> 
-	-->
-	<title>David D. Boling</title>
+	<!-- <script src="js/modernizr.js"></script>-->
+	<title>hiredave.com</title>
+
+
+		<!--[if IE]>
+			<style type="text/css">
+ 			.name {
+				color: black;
+ 			}
+
+ 			.title, .entry, .sub_content, .contact_me, .topic { font-family: Tahoma, Arial, Geneva; }
+
+ 			.filter, .contact_head {
+ 			font-family: Tahoma;
+ 			}
+
+			</style>
+		<![endif]-->
+
 </head>
 	<div class="image"></div>
-
-	<div class="row-fluid name">
-		<div class="container">
-			<div class="col-xs-12">DAVID BOLING</div>
-		</div>
-	</div>
 
 
 <body>
@@ -43,6 +53,14 @@
 			<div class="col-sm-4" data-filter=".blog">Blog</div>
 		</div>
 	</div> 
+
+
+	<div class="row name">
+		<div class="container">
+			<div class="col-xs-12"><p class="text">DAVID D. BOLING</p>
+				<p class="subtext">Desktop and Mobile Web</p></div>
+		</div>
+	</div>
 
 	<div class="row top_content">
 				<div id="content">
@@ -129,9 +147,9 @@
 								<p class="center">Want to touch base?</p>
 
 
-								<div class="button contact" data-filter=".hire">Contact Me</div>
+								<div class="button contact" data-filter=".contact_me">Contact Me</div>
 								<p class="center">or</p>
-								<div class="button quote">Request a Quote</div>
+								<div class="button quote" data-filter=".req_quote">Request a Quote</div>
 
 
 							</div>
@@ -154,12 +172,38 @@
 						<div class="item square_xl contact_me">
 							<div class="sub_content">
 								<div class="contact_head">Need some work done?</div>
-								<div class="contact_head">David D. Boling</div>
 								<div class="contact_head">E-mail: daviddboling@gmail.com</div>
 								<p class="middle">or</p>
-								<div class="button quote">Request a Quote</div>
+								<div class="button quote" data-filter=".req_quote">Request a Quote</div>
 							</div>
 						</div>
+
+
+
+						<!-- REQUEST A QUOTE -->
+						<div class="item square_xl req_quote">
+							<div class="sub_content">
+								<div class="contact_head">Request a Quote</div>
+									<div class="form white">
+										<div class="centered">
+										<form>
+											<label for="cust_name">Name:</label>
+											<input class="cust_name" placeholder="Enter your name here" />
+											
+											<label for="website_name" placeholder="Enter the URL here">Website:</label>
+											<input type="text" text class="website_name" />
+
+											<label type="email">E-Mail:</label>
+											<input class="email_name" placeholder="you@yourprovider.com"/>
+
+											<label for="phone">Phone:</label>
+											<input class="phone" />
+										</form>
+										</div>
+									</div>
+							</div>
+						</div>
+
 
 
 						<!-- BLOG -->

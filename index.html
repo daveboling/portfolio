@@ -37,6 +37,20 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
+<div class="overlay">
+	<div class="sent">
+		<!-- 
+		<p>Your message has been sent!</p>
+		<p>Please allow between 1-3 days for a proper respone.</p>
+	-->
+	<div class="black">
+		<p>Note: This feature is still under construction, not yet functional!</p>
+		<p>Send an e-mail directy to Dave at daviddboling@gmail.com</p>
+		<div class="button ok">OK</div>
+	</div>
+	</div>
+</div>
+
 <div class="container-fluid">
 
 	<div class="row filter">
@@ -189,15 +203,22 @@
 										<form>
 											<label for="cust_name">Name:</label>
 											<input class="cust_name" placeholder="Enter your name here" />
-											
-											<label for="website_name" placeholder="Enter the URL here">Website:</label>
-											<input type="text" text class="website_name" />
+
+											<label for="website_name" >Website:</label>
+											<input type="url" class="website_name" placeholder="Enter the URL here if you have a site already" />
 
 											<label type="email">E-Mail:</label>
 											<input class="email_name" placeholder="you@yourprovider.com"/>
 
 											<label for="phone">Phone:</label>
-											<input class="phone" />
+											<input class="phone" placeholder="555-555-5555" />
+											
+											<div class="center">
+												<label for="message">Message:</label>
+												<textarea type="text" class="message" placeholder="Description of what type of service is needed"></textarea>
+											</div>
+
+											<div class="button send">Send</div>
 										</form>
 										</div>
 									</div>

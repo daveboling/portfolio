@@ -67,4 +67,16 @@ $(window).bind('scroll', function () {
 });
 
 
+
+/* Request a Quote functionality */
+
+$('.req_quote .sub_content .form .send').on('click', function(){
+    $('.overlay').fadeIn(500);
+});
+
+$('body .overlay .sent .ok').on('click', function() {
+    $('.overlay').hide();
+});
+
+
 });

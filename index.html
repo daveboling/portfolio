@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/validate.js"></script>
 	<script src="js/handle.js"></script>
 	<!-- <script src="js/modernizr.js"></script>-->
 	<title>hiredave.com</title>
@@ -188,24 +189,25 @@
 						<div class="item square_xl req_quote">
 							<div class="sub_content">
 								<div class="contact_head">Request a Quote</div>
+								<div class="required_fields errorBox"></div>
 									<div class="form white">
 										<div class="centered">
-										<form>
+										<form name="requestForm">
 											<label>Name:</label>
-											<input class="cust_name" placeholder="Enter your name here" />
+											<input name="name"class="cust_name" placeholder="Enter your name here" />
 
 											<label>Website:</label>
 											<input type="url" class="website_name" placeholder="Enter the URL here if you have a site already" />
 
 											<label>E-Mail:</label>
-											<input class="email_name" placeholder="you@yourprovider.com"/>
+											<input name="email" class="email_name" placeholder="you@yourprovider.com"/>
 
 											<label>Phone:</label>
 											<input class="phone" placeholder="555-555-5555" />
 											
 											<div class="center">
 												<label>Message:</label>
-												<textarea class="message" placeholder="Description of what type of service is needed"></textarea>
+												<textarea name="message" class="message" placeholder="Description of what type of service is needed"></textarea>
 											</div>
 
 											<div class="button send">Send</div>
@@ -246,6 +248,29 @@
 		</div>
 	</div>
 
+<script>
 
+		var validator = new FormValidator('requestForm', [{
+		    name: 'name',
+		    display: 'name',
+		    rules: 'required'
+		}, {
+		    name: 'message',
+		    display: 'message',
+		    rules: 'required'
+		}, {
+		    name: 'email',
+		    rules: 'required|valid_email'
+		}], function(errors, event) {
+			var errorString = '';
+		    if (errors.length > 0) {
+		        // Show the errors
+		        for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+		            errorString += errors[i].message + '<br />';
+		        }
+        		$('.errorBox').html(errorString).hide().fadeIn(500);
+		    }
+		});
+</script>
 </body>
 </html>

@@ -96,7 +96,7 @@ a:visited {
 
 .container-fluid {
 	min-height: 100%;
-  	margin-bottom: -160px;
+  	margin-bottom: -60px;
   	background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -319,6 +319,18 @@ a:visited {
 	text-align: center;
 }
 
+.required_fields {
+	margin-bottom: 0px;
+	line-height: 75px;
+	height: 20%;
+	font-size: 1em;
+	font-family: comfort_bold;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	text-align: center;
+}
+
 
 /* Request a quote */
 
@@ -333,7 +345,7 @@ form {
 	text-align: left;
 	font-size: 1.4em;
 	font-family: Tahoma;
-	padding: 5px;
+	padding: 10px;
 }
 
 .message {
